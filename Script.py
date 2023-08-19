@@ -192,7 +192,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
     CAPTION = """
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : {file_caption}
-════════※ ·❆· ※════════
+
 ▫️ Mᴀɪɴ Gʀᴏᴜᴘ : <a href="https://t.me/primax_hd">𝐘𝐃𝐙𝐨𝐧𝐞</a>
 </b>""" 
 
@@ -271,7 +271,7 @@ To Get Sticker ID
 <b>COMMAND</b> : /font your text (optional)
         <b> Eg:- /font Hello</b>
 
- <i>This feature added by @YourDemandZone"""
+ <i>This feature added by @primax_hd"""
 
     TELE_TXT = """▫️Hᴇʟᴘ: ▪️ Tᴇʟᴇɢʀᴀᴘʜ ▪️
      Tᴇʟᴇɢʀᴀᴘʜ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ
@@ -294,8 +294,6 @@ To Get Sticker ID
 
 🔹Sᴇᴀʀᴄʜ Wᴇʙ Sᴇʀɪᴇs Iɴ ᴛʜɪs Fᴏʀᴍᴀᴛᴇ : 
 › ᴠɪᴋɪɴɢs S01 ✅
-› ᴠɪᴋɪɴɢs S01E01 ✅
-› ᴠɪᴋɪɴɢs S01 ʜɪɴᴅɪ ✅
 › ᴠɪᴋɪɴɢs S01 ʜɪɴᴅɪ ᴅᴜʙʙ. ❌
 › ᴠɪᴋɪɴɢs sᴇᴀsᴏɴ 1 ❌
 › ᴠɪᴋɪɴɢs ᴡᴇʙ sᴇʀɪᴇs ❌

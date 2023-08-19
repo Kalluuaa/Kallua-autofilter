@@ -21,11 +21,11 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', '')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/39539731a6b32c2c1b668.jpg https://telegra.ph/file/60477c74e53302eb859d2.jpg https://telegra.ph/file/3cbc2f0b1fb68d16c0b97.jpg https://telegra.ph/file/2235c5e5f8c1de0fadd93.jpg  https://telegra.ph/file/df832fe48f0d2ad5a1da2.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/b16a0a419ffbebb7dabf6.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/f4884ab6eb953826526cc.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
-VRFIED_IMG = environ.get("VRFIED_IMG", "https://graph.org/file/4d7cb8a05af526a8b2eef.jpg")
+VRFIED_IMG = environ.get("VRFIED_IMG", "https://graph.org/file/cb0e1fed8324513e9f2d8.jpg")
 VRFY_IMG = environ.get("VRFY_IMG", "https://graph.org/file/352426d8283d725c1b945.jpg")
 
 # Admins, Channels & Users

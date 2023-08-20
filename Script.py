@@ -191,9 +191,9 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : {file_caption}
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_caption}</code>
 
-▫️ Mᴀɪɴ Gʀᴏᴜᴘ : <a href="https://t.me/primax_hd">𝐘𝐃𝐙𝐨𝐧𝐞</a>
+<b>💢 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : <a href="https://t.me/primax_movie">ᴘʀɪᴍᴀx</a>
 </b>""" 
 
     FORCE_SUB = """

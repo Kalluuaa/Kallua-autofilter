@@ -50,7 +50,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "YourDemandZone")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'YourDemandZone')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gplinks.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'dffac6814d48ecb0d2dc364b39dabce053ff098e')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))

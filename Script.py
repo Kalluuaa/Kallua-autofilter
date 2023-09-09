@@ -191,7 +191,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_caption}</code>
+<code>{file_caption}</code>
 
 <b>💢 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : <a href="https://t.me/primax_movie">ᴘʀɪᴍᴀx</a>
 </b>""" 
@@ -240,7 +240,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     OWNER_INFO = """
 <b>    Oᴡɴᴇʀ Dᴇᴛᴀɪʟꜱ   
- ◈ ᴛɢ ɴᴀᴍᴇ : botmaker5g
+ ◈ ᴛɢ ɴᴀᴍᴇ : 𝔹𝕠𝕥𝕞𝕒𝕜𝕖𝕣
  ◈ ᴜꜱᴇʀɴᴀᴍᴇ : @botmaker5g
  ◈ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/botmaker5g'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
 """

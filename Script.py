@@ -240,9 +240,9 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     OWNER_INFO = """
 <b>    Oᴡɴᴇʀ Dᴇᴛᴀɪʟꜱ   
- ◈ ᴛɢ ɴᴀᴍᴇ : ₭aLLᏬa ...♡ 
- ◈ ᴜꜱᴇʀɴᴀᴍᴇ : @Mr_kallua
- ◈ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/Mr_kallua'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
+ ◈ ᴛɢ ɴᴀᴍᴇ : botmaker5g
+ ◈ ᴜꜱᴇʀɴᴀᴍᴇ : @botmaker5g
+ ◈ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/botmaker5g'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
 """
 
     DISL_TXT = """

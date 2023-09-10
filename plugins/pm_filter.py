@@ -1787,12 +1787,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/botmaker5g")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/mr_kallua")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
-                InputMediaPhoto("https://graph.org/file/10ab818508a4fef4815d4.jpg")
+                InputMediaPhoto("https://graph.org/file/e4a7618f58ebd7fc19b52.jpg")
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1868,7 +1868,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/botmaker5g")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/mr_kallua")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 

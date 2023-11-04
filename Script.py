@@ -6,12 +6,11 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/look_movieshd{}>{}</a>, I Cᴀɴ Pʀᴏ�
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/look_movieshd'>Mr. Nobody</a>
+✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/look_movieshd'>Mʀ. Nᴏʙᴏᴅʏ</a>
 ✯ Bᴏᴛ Sᴇʀᴠᴇʀ: Pʀɪᴠᴀᴛᴇ
 ✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.7.1 [ Sᴛᴀʙʟᴇ ]</b>"""
 
     SOURCE_TXT = """<b>Nᴏᴛᴇ:
-✭ Bᴏᴛ ɪs Rᴇᴅᴇsɪɢɴ ʙʏ <a href="https://t.me/look_movieshd">l👀k Movies</a>
 ✭ Sᴏᴜʀᴄᴇ - ɪᴛ's ᴀ ᴘʀɪᴠᴀᴛᴇ ʀᴇᴘᴏ
 ✭ ғᴏʀ ᴀɴʏ ǫᴜᴇʀʏ ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ </b>"""
 
@@ -240,9 +239,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     OWNER_INFO = """
 <b>    Oᴡɴᴇʀ Dᴇᴛᴀɪʟꜱ   
- ◈ ᴛɢ ɴᴀᴍᴇ : TG Fan...♡
- ◈ ᴜꜱᴇʀɴᴀᴍᴇ : Tg Fan
- ◈ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
+ ◈ ᴛɢ ɴᴀᴍᴇ : ᴛɢ ғᴀɴ...♡ </b>
 """
 
     DISL_TXT = """
@@ -270,7 +267,7 @@ To Get Sticker ID
 <b>COMMAND</b> : /font your text (optional)
         <b> Eg:- /font Hello</b>
 
- <i>This feature added by @primax_hd"""
+ <i>This feature added by Mr. Nobody"""
 
     TELE_TXT = """▫️Hᴇʟᴘ: ▪️ Tᴇʟᴇɢʀᴀᴘʜ ▪️
      Tᴇʟᴇɢʀᴀᴘʜ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ

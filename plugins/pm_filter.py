@@ -77,7 +77,7 @@ async def give_filter(client, message):
 #     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
 #     if user_id in ADMINS: return # ignore admins
 #     await message.reply_text(
-#          text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://telegram.me/primax_hd>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>", disable_web_page_preview=True,
+#          text=f"<b>ʜᴇʏ {user} 👻 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://telegram.me/primax_hd>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>", disable_web_page_preview=True,
 #          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"telegram.me/primax_hd")]])
 #     )
 #     await bot.send_message(
@@ -960,10 +960,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             reply_markup=InlineKeyboardMarkup(
                                 [
                                 [
-                                    InlineKeyboardButton('📋 Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ', url=SPRT_CHNL),
-                                    InlineKeyboardButton('🔔 Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                                    InlineKeyboardButton("👻 Oᴡɴᴇʀ", url="telegram.me/Master_grim_reaper")
                                 ],[
-                                    InlineKeyboardButton("🌿 Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ 🥀", url="telegram.me/primax_hd")
+                                    InlineKeyboardButton("🤖 Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Bᴏᴛ", url="telegram.me/grim_reaper_moviesbot")
                                 ]
                                 ]
                             )
@@ -1302,10 +1301,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("✅ Uᴘʟᴏᴀᴅᴇᴅ ✅", callback_data=f"upalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
-                 InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
-               ],[
-                 InlineKeyboardButton("🌿 Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ 🥀", url="telegram.me/primax_hd")
+                 InlineKeyboardButton("👻 Oᴡɴᴇʀ", url="telegram.me/Master_grim_reaper")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1327,10 +1323,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("🟢 Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ 🟢", callback_data=f"alalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
-                 InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
-               ],[
-                 InlineKeyboardButton("🌿 Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ 🥀", url="telegram.me/primax_hd")
+                 InlineKeyboardButton("👻 Oᴡɴᴇʀ", url="telegram.me/Master_grim_reaper")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1426,7 +1419,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await asyncio.sleep(0.3)
         await query.message.edit_text(
-            text="▣▣☐"
+            text="▣💀☐"
         )
         await asyncio.sleep(0.3)
         await query.message.edit_text(
@@ -1453,7 +1446,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await asyncio.sleep(0.3)
         await query.message.edit_text(
-            text="▣▣☐"
+            text="▣💀☐"
         )
         await asyncio.sleep(0.3)
         await query.message.edit_text(
@@ -1493,7 +1486,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await asyncio.sleep(0.4)
         await query.message.edit_text(
-            text="▣▣☐"
+            text="▣💀☐"
         )
         await asyncio.sleep(0.4)
         await query.message.edit_text(
@@ -1528,7 +1521,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await asyncio.sleep(0.4)
         await query.message.edit_text(
-            text="▣▣☐"
+            text="▣💀☐"
         )
         await asyncio.sleep(0.4)
         await query.message.edit_text(
@@ -1556,7 +1549,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await asyncio.sleep(0.4)
         await query.message.edit_text(
-            text="▣▣☐"
+            text="▣💀☐"
         )
         await asyncio.sleep(0.4)
         await query.message.edit_text(
@@ -1786,13 +1779,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "owner_info":
             btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/mr_kallua")
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")               
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
-                InputMediaPhoto("https://graph.org/file/e4a7618f58ebd7fc19b52.jpg")
+                InputMediaPhoto("https://graph.org/file/ff519097183ca03398773.jpg")
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1838,7 +1830,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
             await asyncio.sleep(0.3)
             await query.message.edit_text(
-                text="▣▣☐"
+                text="▣💀☐"
             )
             await asyncio.sleep(0.3)
             await query.message.edit_text(
@@ -1999,7 +1991,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [[
                     InlineKeyboardButton(f"Searching  🔍  for {search}", url=CHNL_LNK)
                     ]]
-            dlt = await message.reply_sticker('CAACAgUAAxkBAAOmZOEUxYGQmyOAVwXFsac6UbPuDGgAAgQAA8EkMTGJ5R1uC7PIEB4E', reply_markup=InlineKeyboardMarkup(btn))
+            dlt = await message.reply_sticker('CAACAgUAAxkBAAJmWmVizNAIF0zefp0XHRmDuI0Fv-Y7AAIWAQACyJRkFMa9Lh1mRe3IHgQ', reply_markup=InlineKeyboardMarkup(btn))
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -2033,7 +2025,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [[
                 InlineKeyboardButton(f"Searching  🔍  for {search}", url=CHNL_LNK)
                 ]]
-        dlt = await message.reply_sticker('CAACAgUAAxkBAAOmZOEUxYGQmyOAVwXFsac6UbPuDGgAAgQAA8EkMTGJ5R1uC7PIEB4E', reply_markup=InlineKeyboardMarkup(btn))
+        dlt = await message.reply_sticker('CAACAgUAAxkBAAJmWmVizNAIF0zefp0XHRmDuI0Fv-Y7AAIWAQACyJRkFMa9Lh1mRe3IHgQ', reply_markup=InlineKeyboardMarkup(btn))
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     # if 'is_shortlink' in settings.keys():
@@ -2166,7 +2158,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
         if not settings["button"]:
-            cap+="<b>\n\n<u>📚 Requested Files 👇</u></b>\n"
+            cap+="<b>\n\n<u>📚 Rᴇǫᴜᴇsᴛᴇᴅ Fɪʟᴇs 👇</u></b>\n"
             for file in files:
                 cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.') and not x.startswith('tg') and not x.startswith('telegram'), file.file_name.split()))}\n</a></b>"
     else:
@@ -2175,7 +2167,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             # cap = f"<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
             cap = f"<b>Hᴇʏ {message.from_user.mention}, Fᴏᴜɴᴅ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
-            cap+="<b><u>📚 Requested Files 👇</u></b>\n\n"
+            cap+="<b><u>📚 Rᴇǫᴜᴇsᴛᴇᴅ Fɪʟᴇs 👇</u></b>\n\n"
             for file in files:
                 cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.') and not x.startswith('tg') and not x.startswith('telegram'), file.file_name.split()))}\n\n</a></b>"
 
@@ -2324,7 +2316,7 @@ async def advantage_spell_chok(client, msg):
             callback_data=f"spolling#{reqstr1}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="✘Close✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="✘ Close ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),

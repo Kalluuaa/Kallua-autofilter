@@ -51,7 +51,7 @@ async def start(client, message):
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgQAAxkBAAECFCZlYsnbTA-ItM_wSa8I_R2Me9FA4QACFxIAArzT-FOmYU0gLeJu7x4E") 
-        await asyncio.sleep(3)
+        await asyncio.sleep(2)
         await m.delete()
         m=await message.reply_sticker("CAACAgQAAxkBAAECFCdlYsnjhfmscHSoqXEF6L1zOLZnHwACWR8AAiPTIFBhHQABqom6_DkeBA") 
         await asyncio.sleep(1)
@@ -150,14 +150,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                        [
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
-                         ]
-                        ]
-                    )
-                )
+                    
                 markup = await direct_gen_handler(file_reply)
                 await file_reply.edit_reply_markup(markup) if markup else None
     
@@ -169,14 +162,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                         [
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
-                         ]
-                        ]
-                    )
-                )
+                    
                 markup = await direct_gen_handler(file_reply)
                 await file_reply.edit_reply_markup(markup) if markup else None
 
@@ -188,7 +174,7 @@ async def start(client, message):
         return
     
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("<b>Please wait...</b>")
+        sts = await message.reply"<b>Please wait...</b>")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
@@ -329,14 +315,7 @@ async def start(client, message):
                 file_id=file_id,
                 caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                     [
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
-                     ]
-                    ]
-                )
-            )
+                
             markup = await direct_gen_handler(file_reply)
             await file_reply.edit_reply_markup(markup) if markup else None
     
@@ -393,14 +372,7 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                     [
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
-                     ]
-                    ]
-                )
-            )
+                
             markup = await direct_gen_handler(file_reply)
             await file_reply.edit_reply_markup(markup) if markup else None
     
@@ -455,14 +427,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup(
-            [
-             [
-              InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/primax_hd")
-             ]
-            ]
-        )
-    )
+        
     markup = await direct_gen_handler(file_reply)
     await file_reply.edit_reply_markup(markup) if markup else None
     

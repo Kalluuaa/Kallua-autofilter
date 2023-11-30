@@ -149,7 +149,7 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False),
+                    protect_content=msg.get('protect', False)
                     
                 markup = await direct_gen_handler(file_reply)
                 await file_reply.edit_reply_markup(markup) if markup else None
@@ -161,7 +161,7 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False),
+                    protect_content=msg.get('protect', False)
                     
                 markup = await direct_gen_handler(file_reply)
                 await file_reply.edit_reply_markup(markup) if markup else None
@@ -314,7 +314,7 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 caption=f_caption,
-                protect_content=True if pre == 'filep' else False,
+                protect_content=True if pre == 'filep' else False
                 
             markup = await direct_gen_handler(file_reply)
             await file_reply.edit_reply_markup(markup) if markup else None
@@ -426,7 +426,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        protect_content=True if pre == 'filep' else False,
+        protect_content=True if pre == 'filep' else False
         
     markup = await direct_gen_handler(file_reply)
     await file_reply.edit_reply_markup(markup) if markup else None

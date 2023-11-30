@@ -149,17 +149,8 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                        [
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
-                         ]
-                        ]
-                    )
-                )
-              await file_reply.edit_reply_markup(markup) if markup else None
-    
+                    protect_content=msg.get('protect', False) )
+               
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
@@ -167,17 +158,8 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                         [
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
-                         ]
-                        ]
-                    )
-                )
-                 await file_reply.edit_reply_markup(markup) if markup else None
-
+                    protect_content=msg.get('protect', False) )
+                 
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue

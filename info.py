@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'hhttps://graph.org/file/956c8005b1c421e1ef4a8.jpg https://graph.org/file/eff1cb1eace1cd4109894.jpg https://graph.org/file/efb01adce9c0f931c883d.jpg https://graph.org/file/fea53228d0f41a49e8126.jpg https://graph.org/file/2df1169808b024876ef84.jpg https://graph.org/file/3d623e93bdd48ad89cd0c.jpg https://graph.org/file/0966408658734bf76a4a8.jpg https://graph.org/file/e09003fe0ee5d37bb635f.jpg https://graph.org/file/9e4a0725b1dd60612e2d7.jpg https://graph.org/file/7b44878b017f9d493fd27.jpg https://graph.org/file/4fcc79acfc22077d82821.jpg https://graph.org/file/51f6299d698f3c5cf7c9e.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/e1e2af7ad158bd5830462.jpg https://graph.org/file/ec21f8b3e2074341c6e0b.jpg https://graph.org/file/342772992931894202f4d.jpg https://graph.org/file/bf8419f07498f86f25791.jpg https://graph.org/file/ff519097183ca03398773.jpg https://graph.org/file/872f54f7d96889b2adb6e.jpg https://graph.org/file/869a57b053a72dc95758e.jpg https://graph.org/file/74ec3e6b3fe46518f05b7.jpg https://graph.org/file/ced4b64ba8d243d7df00f.jpg https://graph.org/file/c4db55c3858cd6106e92b.jpg https://graph.org/file/ce32f0bd613b2b394eabb.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/b16a0a419ffbebb7dabf6.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/43bdc54bddeff10dd3f03.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -46,8 +46,8 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "YourDemandZone")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'YourDemandZone')
+DATABASE_NAME = environ.get('DATABASE_NAME', "tgfiles")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'tgfiles')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
@@ -58,12 +58,12 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/primax_hd')
-SPRT_CHNL = environ.get('SPRT_CHNL', 'https://t.me/primax_updates')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/primax_movie')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/primax_movie/53')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me')
+SPRT_CHNL = environ.get('SPRT_CHNL', 'https://t.me')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/primax_movie/66')
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001733706246'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'primax_hd')
@@ -99,6 +99,6 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 #Direct Link Generator By @Developerr_Bots
-DIRECT_GEN_DB = int(environ.get("DIRECT_GEN_DB", "-1001855110365")) # Enter your channel id
-DIRECT_GEN_URL = environ.get("DIRECT_GEN_URL", "https://download-link-96d3948c3fd5.herokuapp.com/") # https://example.com/
+DIRECT_GEN_DB = int(environ.get("DIRECT_GEN_DB", "-1001818991527")) # Enter your channel id
+DIRECT_GEN_URL = environ.get("DIRECT_GEN_URL", "https://fmfiletolink98-161874a6573b.herokuapp.com/") # https://example.com/
 DIRECT_GEN = bool(DIRECT_GEN_DB and DIRECT_GEN_URL)

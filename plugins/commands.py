@@ -332,7 +332,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/primax_hd")
+                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
                      ]
                     ]
                 )
@@ -396,7 +396,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ", url="t.me/primax_hd")
+                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
                      ]
                     ]
                 )
@@ -427,7 +427,7 @@ async def start(client, message):
             pass
         return await message.reply('Nᴏ Sᴜᴄʜ Fɪʟᴇ Eᴇxɪsᴛ.')
     files = files_[0]
-    title = '📂 Fɪʟᴇ ɴᴀᴍᴇ :'.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
+    title =  ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
     size=get_size(files.file_size)
     f_caption=files.caption
     if CUSTOM_FILE_CAPTION:

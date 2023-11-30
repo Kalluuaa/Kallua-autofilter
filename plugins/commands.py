@@ -427,7 +427,7 @@ async def start(client, message):
             pass
         return await message.reply('Nᴏ Sᴜᴄʜ Fɪʟᴇ Eᴇxɪsᴛ.')
     files = files_[0]
-    title = '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
+    title = '📂 Fɪʟᴇ ɴᴀᴍᴇ :'.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
     size=get_size(files.file_size)
     f_caption=files.caption
     if CUSTOM_FILE_CAPTION:

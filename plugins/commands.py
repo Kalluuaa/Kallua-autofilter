@@ -308,15 +308,8 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 caption=f_caption,
-                protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                     [
-                       InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
-                         ]
-                    ]
-                )
-            )
+                protect_content=True if pre == 'filep' else False
+                 )
             markup = await direct_gen_handler(file_reply)
             await file_reply.edit_reply_markup(markup) if markup else None
     
@@ -372,15 +365,8 @@ async def start(client, message):
             reply_file = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
-                protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                     [
-                       InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
-                         ]
-                    ]
-                )
-            )
+                protect_content=True if pre == 'filep' else False
+                 )
             markup = await direct_gen_handler(file_reply)
             await file_reply.edit_reply_markup(markup) if markup else None
     
@@ -434,15 +420,8 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup(
-            [
-             [
-                InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
-                         ]
-            ]
-        )
-    )
+        protect_content=True if pre == 'filep' else False
+            )
     markup = await direct_gen_handler(file_reply)
     await file_reply.edit_reply_markup(markup) if markup else None
     

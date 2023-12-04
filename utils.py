@@ -644,8 +644,8 @@ async def direct_gen_handler(m: Message):
                 markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🖥 ꜱᴛʀᴇᴀᴍ", url=stream_link),
-                        InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ", url=download_link)
+                        InlineKeyboardButton("🖥 Sᴛʀᴇᴀᴍ", url=stream_link),
+                        InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ 📥", url=download_link)
                     ]
                 ]
             )
@@ -654,8 +654,8 @@ async def direct_gen_handler(m: Message):
                 markup.insert(
                     0,
                     [
-                        InlineKeyboardButton("🖥 ꜱᴛʀᴇᴀᴍ ", url=stream_link),
-                        InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ", url=download_link)
+                        InlineKeyboardButton("🖥 Sᴛʀᴇᴀᴍ", url=stream_link),
+                        InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ 📥", url=download_link)
                     ]
                 )
                 markup = InlineKeyboardMarkup(markup)
@@ -706,7 +706,7 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
             for file in files:
                 title = file.file_name
                 size = get_size(file.file_size)
-                await bot.send_message(chat_id=userid, text=f"<b>Hᴇʏ ᴛʜᴇʀᴇ {user_name} 👋🏽 \n\n✅ Sᴇᴄᴜʀᴇ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ғɪʟᴇ ʜᴀs sᴜᴄᴄᴇssғᴜʟʟʏ ʙᴇᴇɴ ɢᴇɴᴇʀᴀᴛᴇᴅ ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ\n\n🗃️ Fɪʟᴇ Nᴀᴍᴇ : {title}\n🔖 Fɪʟᴇ Sɪᴢᴇ : {size}</b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📤 ᴅᴏᴡɴʟᴏᴀᴅ", url=await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}"))]]))
+                await bot.send_message(chat_id=userid, text=f"<b>Hᴇʏ ᴛʜᴇʀᴇ {user_name} 👋🏽 \n\n✅ Sᴇᴄᴜʀᴇ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ғɪʟᴇ ʜᴀs sᴜᴄᴄᴇssғᴜʟʟʏ ʙᴇᴇɴ ɢᴇɴᴇʀᴀᴛᴇᴅ ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ\n\n🗃️ Fɪʟᴇ Nᴀᴍᴇ : {title}\n🔖 Fɪʟᴇ Sɪᴢᴇ : {size}</b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ 📥", url=await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}"))]]))
         else:
             for file in files:
                     f_caption = file.caption
@@ -730,10 +730,7 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
-                                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                            ],[
-                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/mr_kallua")
+                                InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
                                 ]
                             ]
                         )

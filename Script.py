@@ -91,13 +91,13 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /delallg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ Gғɪʟᴛᴇʀs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
 • /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
 
-    STATUS_TXT = """<b>⍟────[ ʙᴏᴛ sᴛᴀᴛᴜ𝗌 ]────⍟
-★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
-★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
-★ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
-★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
-★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code></b>
-•❅─────✧❅✦❅✧─────❅•"""
+    STATUS_TXT = """<b>────「 Bᴏᴛ sᴛᴀᴛᴜ𝗌 」────\n
+ 📁 Tᴏᴛᴀʟ Fɪʟᴇs : <code>{}</code>
+ 👥 Tᴏᴛᴀʟ Usᴇʀs : <code>{}</code>
+ 💬 Tᴏᴛᴀʟ Cʜᴀᴛs : <code>{}</code>
+ 🗃 Usᴇᴅ Sᴛᴏʀᴀɢᴇ : <code>{}</code>
+ 🆓 Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ : <code>{}</code></b>
+•────────✦────────•"""
 
     LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)

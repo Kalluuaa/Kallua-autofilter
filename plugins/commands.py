@@ -46,10 +46,12 @@ async def start(client, message):
         ] ,[
                     InlineKeyboardButton('⚠️ Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('🔰 Aʙᴏᴜᴛ', callback_data='about')
-                ]]
+                ],[
+                    InlineKeyboardButton('🍀 Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟs 🍀', callback_data="chnl_info")
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgQAAxkBAAECFCZlYsnbTA-ItM_wSa8I_R2Me9FA4QACFxIAArzT-FOmYU0gLeJu7x4E") 
-        await asyncio.sleep(2)
+        await asyncio.sleep(3)
         await m.delete()
         m=await message.reply_sticker("CAACAgQAAxkBAAECFCdlYsnjhfmscHSoqXEF6L1zOLZnHwACWR8AAiPTIFBhHQABqom6_DkeBA") 
         await asyncio.sleep(1)
@@ -99,7 +101,9 @@ async def start(client, message):
         ],[
                     InlineKeyboardButton('⚠️ Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('🔰 Aʙᴏᴜᴛ', callback_data='about')
-                ]]
+                ],[
+                    InlineKeyboardButton('🍀 Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟs 🍀', callback_data="chnl_info")
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -141,7 +145,7 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                  reply_file = await client.send_cached_media(
+                reply_file = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
@@ -156,7 +160,7 @@ async def start(client, message):
                 )
                 markup = await direct_gen_handler(file_reply)
                 await file_reply.edit_reply_markup(markup) if markup else None
-               
+    
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
@@ -175,7 +179,7 @@ async def start(client, message):
                 )
                 markup = await direct_gen_handler(file_reply)
                 await file_reply.edit_reply_markup(markup) if markup else None
-                 
+
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
@@ -327,15 +331,15 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                    [
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
+                     [
+                       InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
                          ]
                     ]
                 )
             )
             markup = await direct_gen_handler(file_reply)
             await file_reply.edit_reply_markup(markup) if markup else None
-            
+    
         #     filesarr.append(msg)
         # k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
         # await asyncio.sleep(600)
@@ -385,21 +389,21 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
-               reply_file = await client.send_cached_media(
+            reply_file = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                   [
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
+                     [
+                       InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
                          ]
                     ]
                 )
             )
             markup = await direct_gen_handler(file_reply)
             await file_reply.edit_reply_markup(markup) if markup else None
-            
+    
             filetype = msg.media
             file = getattr(reply_file, filetype.value)
             title = '@primax_hd ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
@@ -423,7 +427,7 @@ async def start(client, message):
             pass
         return await message.reply('Nᴏ Sᴜᴄʜ Fɪʟᴇ Eᴇxɪsᴛ.')
     files = files_[0]
-    title =  ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
+    title = '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
     size=get_size(files.file_size)
     f_caption=files.caption
     if CUSTOM_FILE_CAPTION:
@@ -446,22 +450,22 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(btn)
         )
         return
-     file_reply = await client.send_cached_media(
+    file_reply = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [
-              [
-                          InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
+             [
+                InlineKeyboardButton("Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Bᴏᴛ 🤖", url="t.me/grim_reaper_moviesbot")
                          ]
             ]
         )
     )
     markup = await direct_gen_handler(file_reply)
     await file_reply.edit_reply_markup(markup) if markup else None
-                
+    
     # btn = [[
     #     InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
     # ]]

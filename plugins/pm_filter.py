@@ -45,6 +45,15 @@ SPELL_CHECK = {}
 ADMIN_USRNM = "Mr_kallua"
 # ENABLE_SHORTLINK = ""
 
+currentTime = datetime.datetime.now()
+
+if currentTime.hour < 12:
+    wish = " Gᴏᴏᴅ Mᴏʀɴɪɴɢ "
+elif 12 <= currentTime.hour < 12:
+    wish = ' Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ '
+else:
+    wish = ' Gᴏᴏᴅ Eᴠᴇɴɪɴɢ '
+
 @Client.on_message(filters.group | filters.private & filters.text & filters.incoming)
 async def give_filter(client, message):
     if message.chat.id != SUPPORT_CHAT_ID:
@@ -1388,7 +1397,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention),
+            text=script.START_TXT.format(wish, query.from_user.mention, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )

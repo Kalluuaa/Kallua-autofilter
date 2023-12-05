@@ -1,6 +1,19 @@
+import time
+import datetime
+from datetime import date as date_
+
+currentTime = datetime.datetime.now()
+
+if currentTime.hour < 12:
+    wish = " Gᴏᴏᴅ ᴍᴏʀɴɪɴɢ ꜱᴡᴇᴇᴛʜᴇᴀʀᴛ 🌅"
+elif 12 <= currentTime.hour < 12:
+    wish = ' Gᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ ᴍʏ Lᴏᴠᴇ 👽 '
+else:
+    wish = ' Gᴏᴏᴅ ᴇᴠᴇɴɪɴɢ ʙᴀʙʏ ⛄️'
+
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},
-Mʏ Nᴀᴍᴇ Is <a href=https://t.me/look_movieshd{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ As Aᴅᴍɪɴ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
+    START_TXT = """<b>Hᴇʟʟᴏ {wish},{},
+Mʏ Nᴀᴍᴇ Is <a href=https://t.me/grim_reaper_moviesbot{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ As Aᴅᴍɪɴ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""

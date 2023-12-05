@@ -31,8 +31,6 @@ from database.gfilters_mdb import (
     del_allg
 )
 import logging
-import time
-import datetime
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
@@ -46,15 +44,6 @@ BUTTONS2 = {}
 SPELL_CHECK = {}
 ADMIN_USRNM = "Mr_kallua"
 # ENABLE_SHORTLINK = ""
-
-currentTime = datetime.datetime.now()
-
-if currentTime.hour < 12:
-    wish = " Gᴏᴏᴅ Mᴏʀɴɪɴɢ "
-elif 12 <= currentTime.hour < 12:
-    wish = ' Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ '
-else:
-    wish = ' Gᴏᴏᴅ Eᴠᴇɴɪɴɢ '
 
 @Client.on_message(filters.group | filters.private & filters.text & filters.incoming)
 async def give_filter(client, message):

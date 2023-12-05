@@ -8,9 +8,11 @@ class script(object):
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>✭ Mʏ Nᴀᴍᴇ : {}
-✭ Cʀᴇᴀᴛᴏʀ : <a href='https://t.me/Master_grim_reaper'>Mʀ. Nᴏʙᴏᴅʏ</a>
-✭ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : v2.7.1 [ Sᴛᴀʙʟᴇ ]</b>"""
+    ABOUT_TXT = """<b>🤖 Mʏ Nᴀᴍᴇ : <a href='https://t.me/grim_reaper_moviesbot'>Gʀɪᴍ Rᴇᴀᴘᴇʀ</a>
+👑 Oᴡɴᴇʀ : : <a href='https://t.me/Master_grim_reaper'>Mʀ. Nᴏʙᴏᴅʏ</a>
+👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ : <a href='https://t.me/Noobseverywhere'>Nᴏᴏʙs Eᴠᴇʀʏᴡʜᴇʀᴇ</a>
+🔐 Sᴏᴜʀᴄᴇ - Iᴛ's A Pʀɪᴠᴀᴛᴇ Rᴇᴘᴏ
+📊 Bᴜɪʟᴅ Sᴛᴀᴛᴜs : v2.7.1 [ Sᴛᴀʙʟᴇ ]</b>"""
 
     SOURCE_TXT = """<b>Nᴏᴛᴇ:
 ✭ Sᴏᴜʀᴄᴇ - ɪᴛ's ᴀ ᴘʀɪᴠᴀᴛᴇ ʀᴇᴘᴏ
@@ -98,8 +100,8 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
  👥 Tᴏᴛᴀʟ Usᴇʀs : <code>{}</code>
  💬 Tᴏᴛᴀʟ Cʜᴀᴛs : <code>{}</code>
  🗃 Usᴇᴅ Sᴛᴏʀᴀɢᴇ : <code>{}</code>
- 🆓 Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ : <code>{}</code></b>
-•────────✦────────•"""
+ 🆓 Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ : <code>{}</code>
+•────────✦────────•</b>"""
 
     LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)

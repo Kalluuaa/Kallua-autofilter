@@ -25,11 +25,11 @@ BATCH_FILES = {}
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-    wish = " Gᴏᴏᴅ ᴍᴏʀɴɪɴɢ "
+    wish = " Gᴏᴏᴅ Mᴏʀɴɪɴɢ "
 elif 12 <= currentTime.hour < 12:
-    wish = ' Gᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ '
+    wish = ' Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ '
 else:
-    wish = ' Gᴏᴏᴅ ᴇᴠᴇɴɪɴɢ '
+    wish = ' Gᴏᴏᴅ Eᴠᴇɴɪɴɢ '
     
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):

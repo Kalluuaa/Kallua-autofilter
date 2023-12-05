@@ -62,10 +62,10 @@ async def start(client, message):
         await asyncio.sleep(1)
         await m.delete()
         m=await message.reply_text("𝑺𝒕𝒂𝒓𝒕𝒊𝒏𝒈...") 
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.5)
         await m.delete()        
         m=await message.reply_sticker("CAACAgQAAxkBAAECFCdlYsnjhfmscHSoqXEF6L1zOLZnHwACWR8AAiPTIFBhHQABqom6_DkeBA") 
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.7)
         await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),

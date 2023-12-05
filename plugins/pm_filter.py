@@ -1,4 +1,3 @@
-# Kanged From @TroJanZheX
 import asyncio
 import re
 import ast
@@ -43,7 +42,7 @@ BUTTONS0 = {}
 BUTTONS1 = {}
 BUTTONS2 = {}
 SPELL_CHECK = {}
-ADMIN_USRNM = "Mr_kallua"
+ADMIN_USRNM = "Master_grim_reaper"
 # ENABLE_SHORTLINK = ""
 
 @Client.on_message(filters.group | filters.private & filters.text & filters.incoming)

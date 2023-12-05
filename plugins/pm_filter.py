@@ -1388,12 +1388,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention),
+            text=script.START_TXT.format(query.from_user.mention, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
         await query.answer(MSG_ALRT)
-
     elif query.data == "filters":
         buttons = [[
             InlineKeyboardButton('Mᴀɴᴜᴀʟ FIʟᴛᴇʀ', callback_data='manuelfilter'),

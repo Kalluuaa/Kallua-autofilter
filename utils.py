@@ -23,6 +23,8 @@ import aiohttp
 from shortzy import Shortzy
 import http.client
 import json
+import time
+import datetime
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -55,6 +57,15 @@ class temp(object):
     SETTINGS = {}
     CAP = {}
 
+currentTime = datetime.datetime.now()
+
+if currentTime.hour < 12:
+    wish = " Gᴏᴏᴅ Mᴏʀɴɪɴɢ "
+elif 12 <= currentTime.hour < 12:
+    wish = ' Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ '
+else:
+    wish = ' Gᴏᴏᴅ Eᴠᴇɴɪɴɢ '
+    
 async def is_subscribed(bot, query):
     try:
         user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)

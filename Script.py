@@ -1,14 +1,14 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ{}{} ,
-/n Mʏ Nᴀᴍᴇ Is <a href=https://t.me/look_movieshd{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ As Aᴅᴍɪɴ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
+
+Mʏ Nᴀᴍᴇ Is <a href=https://t.me/look_movieshd{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ As Aᴅᴍɪɴ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/look_movieshd'>Mʀ. Nᴏʙᴏᴅʏ</a>
-✯ Bᴏᴛ Sᴇʀᴠᴇʀ: Pʀɪᴠᴀᴛᴇ
-✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.7.1 [ Sᴛᴀʙʟᴇ ]</b>"""
+    ABOUT_TXT = """<b>● Mʏ Nᴀᴍᴇ : {}
+● Cʀᴇᴀᴛᴏʀ : <a href='https://t.me/look_movieshd'>Mʀ. Nᴏʙᴏᴅʏ</a>
+● Bᴜɪʟᴅ Sᴛᴀᴛᴜs : v2.7.1 [ Sᴛᴀʙʟᴇ ]</b>"""
 
     SOURCE_TXT = """<b>Nᴏᴛᴇ:
 ✭ Sᴏᴜʀᴄᴇ - ɪᴛ's ᴀ ᴘʀɪᴠᴀᴛᴇ ʀᴇᴘᴏ

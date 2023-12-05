@@ -7,6 +7,7 @@ import pytz
 import time
 import datetime
 from datetime import datetime, timedelta, date, time
+from datetime import date as date_
 lock = asyncio.Lock()
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty

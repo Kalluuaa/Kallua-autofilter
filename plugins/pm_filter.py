@@ -1,3 +1,4 @@
+
 import asyncio
 import re
 import ast
@@ -6,8 +7,7 @@ import random
 import pytz
 from datetime import datetime, timedelta, date, time
 lock = asyncio.Lock()
-import time
-import datetime
+
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
@@ -43,18 +43,9 @@ BUTTONS0 = {}
 BUTTONS1 = {}
 BUTTONS2 = {}
 SPELL_CHECK = {}
-ADMIN_USRNM = "Master_grim_reaper"
+ADMIN_USRNM = "Mr_kallua"
 # ENABLE_SHORTLINK = ""
 
-currentTime = datetime.datetime.now()
-
-if currentTime.hour < 12:
-    wish = " Gᴏᴏᴅ Mᴏʀɴɪɴɢ "
-elif 12 <= currentTime.hour < 12:
-    wish = ' Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ '
-else:
-    wish = ' Gᴏᴏᴅ Eᴠᴇɴɪɴɢ '
-    
 @Client.on_message(filters.group | filters.private & filters.text & filters.incoming)
 async def give_filter(client, message):
     if message.chat.id != SUPPORT_CHAT_ID:
@@ -1391,14 +1382,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Aʙᴏᴜᴛ 🔰', callback_data='about')
         ]]
         
-        reply_markup = InlineKeyboardMarkup(buttons)        
+        reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.START_TXT.format(wish, query.from_user.mention, temp.B_NAME),
+            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1503,7 +1494,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🎁 Exᴛʀᴀ Fᴇᴀᴛᴜʀᴇs 🎁', callback_data='mods')
+            InlineKeyboardButton(' Exᴛʀᴀ Fᴇᴀᴛᴜʀᴇs ', callback_data='mods')
         ],[
             InlineKeyboardButton('♙ Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')

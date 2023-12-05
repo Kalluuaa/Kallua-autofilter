@@ -1,7 +1,6 @@
 class script(object):
     START_TXT = """<b>Hᴇʏ{}{} ,
 
-Mʏ Nᴀᴍᴇ ɪs  <a href=https://t.me/grim_reaper_moviesbot>{}</a>, 
 ɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ-ꜰɪʟᴛᴇʀ + ᴍᴀɴᴜᴀʟ-ꜰɪʟᴛᴇʀ + ꜰɪʟᴇ-sᴛᴏʀᴇ ʙᴏᴛ ᴡɪᴛʜ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴᴅ ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ ꜰᴇᴀᴛᴜʀᴇ.
 
 ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀs ᴀᴅᴍɪɴ ᴀɴᴅ ᴇɴᴊᴏʏ 😊</b>"""
@@ -141,7 +140,7 @@ Dᴏɴ'ᴛ Wᴏʀʀʏ 😊, Cʜᴏᴏsᴇ Tʜᴇ Cᴏʀʀᴇᴄᴛ Oɴᴇ Bᴇʟ
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
     SHORTLINK_INFO = """
-<b>────「 <a href=https://t.me> Hᴏᴡ ᴛᴏ Eᴀʀɴ Mᴏɴᴇʏ </a> 」───
+<b>───「 <a href=https://t.me> Hᴏᴡ ᴛᴏ Eᴀʀɴ Mᴏɴᴇʏ </a> 」───
 
 Nᴏᴡ Yᴏᴜ Cᴀɴ Sᴛᴀʀᴛ Eᴀʀɴɪɴɢ 💸 Mᴏɴᴇʏ Tᴏᴅᴀʏ Wɪᴛʜ Oᴜʀ Sɪᴍᴘʟᴇ Aɴᴅ Eᴀꜱʏ-Tᴏ-Uꜱᴇ Bᴏᴛ!
 
@@ -152,7 +151,7 @@ Nᴏᴡ Yᴏᴜ Cᴀɴ Sᴛᴀʀᴛ Eᴀʀɴɪɴɢ 💸 Mᴏɴᴇʏ Tᴏᴅᴀʏ
 ›› Sᴛᴇᴘ 3 : Iꜰ Yᴏᴜ Dᴏɴ'ᴛ Uꜱɪɴɢ Aɴʏ Sʜᴏʀᴛɴᴇʀ Wᴇʙꜱɪᴛᴇ Tʜᴇɴ Mᴀᴋᴇ Aᴄᴄᴏᴜɴᴛ Fɪʀꜱᴛ Oɴ <a href=https://krishnalink.com/ref/Zodiac>Kʀɪsʜɴᴀʟɪɴᴋs</a> (Yᴏᴜ Cᴀɴ Aʟꜱᴏ Uꜱᴇ Oᴛʜᴇʀ Lɪɴᴋ Sʜᴏʀᴛɴᴇʀ Wᴇʙꜱɪᴛᴇ).
 
 ›› Sᴛᴇᴘ 4 : Cᴏᴘʏ Yᴏᴜʀ Aᴘɪ Fʀᴏᴍ Wᴇʙꜱɪᴛᴇ Aɴᴅ Tʜᴇɴ, Sɪᴍᴘʟʏ Sᴇᴛ Yᴏᴜʀ Wᴇʙꜱɪᴛᴇ Aɴᴅ Aᴘɪ Uꜱɪɴɢ Tʜᴇ
-/shortlink Cᴏᴍᴍᴀɴᴅ.
+/set_shortner Cᴏᴍᴍᴀɴᴅ.
 
 › Lɪᴋᴇ Tʜɪꜱ :  /set_shortner krishnalink.com 9c6894b8b9d7a692cff9d41124bf39fc2c937d5a
 
@@ -201,11 +200,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """
-<code>{file_name}</code>
-
-<b>💢 Uᴘʟᴏᴀᴅᴇᴅ Bʏ :
-</b>""" 
+    CAPTION = """<code>{file_name}</code>""" 
 
     FORCE_SUB = """
 **⚠️ Pʟᴇᴀsᴇ ғᴏʟʟᴏᴡ ᴛʜɪs ʀᴜʟe ⚠️
@@ -220,12 +215,11 @@ Aғᴛᴇʀ ᴛʜᴀᴛ ɪ'ʟʟ sᴇɴᴅ ʏᴏᴜ ᴛʜᴀᴛ ᴍᴏᴠɪᴇ �
 
     IMDB_TEMPLATE_TXT = """
 <b>
-IMDb Data:
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-⏱️ Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
+🏷 ᴛɪᴛʟᴇ : <a href={url}>{title}</a>
+🎭 ɢᴇɴʀᴇs : {genres}
+📆 ʏᴇᴀʀ : <a href={url}/releaseinfo>{year}</a>
+⏱️ ʀᴇsᴜʟᴛ sʜᴏᴡɴ ɪɴ : {remaining_seconds} <i>seconds</i> 🔥
+🌟 ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a> / 10</b>"""
 
     
     ALL_FILTERS = """
@@ -357,10 +351,9 @@ Uꜱᴇʀ Sᴛᴀᴛᴜꜱ : Vᴇʀɪғɪᴇᴅ</b>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 
-    LOGO = """
-███╗░░░███╗██████╗░░░░░██████╗██████╗░██╗██████╗░██╗░░░██╗
-████╗░████║██╔══██╗░░░██╔════╝██╔══██╗██║██╔══██╗╚██╗░██╔╝
-██╔████╔██║██████╔╝░░░╚█████╗░██████╔╝██║██║░░██║░╚████╔╝░
-██║╚██╔╝██║██╔══██╗░░░░╚═══██╗██╔═══╝░██║██║░░██║░░╚██╔╝░░
-██║░╚═╝░██║██║░░██║██╗██████╔╝██║░░░░░██║██████╔╝░░░██║░░░
-╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝╚═════╝░╚═╝░░░░░╚═╝╚═════╝░░░░╚═╝░░░"""
+    LOGO = """●●●      ●      ●     ●      ●
+              ●    ●   ●       ●     ● ●   ●
+              ●●●●    ●       ●     ●   ● ●
+              ●   ●     ●     ●      ●    ●●
+              ●    ●       ●●        ●      ●
+    """

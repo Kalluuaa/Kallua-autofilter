@@ -47,6 +47,15 @@ SPELL_CHECK = {}
 ADMIN_USRNM = "Master_grim_reaper"
 # ENABLE_SHORTLINK = ""
 
+currentTime = datetime.datetime.now()
+
+if currentTime.hour < 12:
+    wish = " Gᴏᴏᴅ Mᴏʀɴɪɴɢ "
+elif 12 <= currentTime.hour < 12:
+    wish = ' Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ '
+else:
+    wish = ' Gᴏᴏᴅ Eᴠᴇɴɪɴɢ '
+    
 @Client.on_message(filters.group | filters.private & filters.text & filters.incoming)
 async def give_filter(client, message):
     if message.chat.id != SUPPORT_CHAT_ID:
@@ -1383,15 +1392,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Aʙᴏᴜᴛ 🔰', callback_data='about')
         ]]
         
-        reply_markup = InlineKeyboardMarkup(buttons)
-        currentTime = datetime.datetime.now()
-
-if currentTime.hour < 12:
-    wish = " Gᴏᴏᴅ Mᴏʀɴɪɴɢ "
-elif 12 <= currentTime.hour < 12:
-    wish = ' Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ '
-else:
-    wish = ' Gᴏᴏᴅ Eᴠᴇɴɪɴɢ '
+        reply_markup = InlineKeyboardMarkup(buttons)        
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 

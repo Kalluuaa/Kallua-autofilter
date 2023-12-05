@@ -33,7 +33,6 @@ from database.gfilters_mdb import (
 import logging
 import time
 import datetime
-from datetime import date as date_
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)

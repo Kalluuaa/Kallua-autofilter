@@ -15,10 +15,22 @@ from database.connections_mdb import active_connection
 import re, asyncio, os, sys
 import json
 import base64
+import time
+import datetime
+from datetime import date as date_
 logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
+currentTime = datetime.datetime.now()
+
+if currentTime.hour < 12:
+    wish = " Gᴏᴏᴅ ᴍᴏʀɴɪɴɢ ꜱᴡᴇᴇᴛʜᴇᴀʀᴛ 🌅"
+elif 12 <= currentTime.hour < 12:
+    wish = ' Gᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ ᴍʏ Lᴏᴠᴇ 👽 '
+else:
+    wish = ' Gᴏᴏᴅ ᴇᴠᴇɴɪɴɢ ʙᴀʙʏ ⛄️'
+    
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -40,20 +52,20 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ', callback_data="shortlink_info")
+                    InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info")
         ] ,[
                     InlineKeyboardButton('⚠️ Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('🔰 Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('Aʙᴏᴜᴛ 🔰', callback_data='about')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgQAAxkBAAECFCZlYsnbTA-ItM_wSa8I_R2Me9FA4QACFxIAArzT-FOmYU0gLeJu7x4E") 
-        await asyncio.sleep(3)
+        await asyncio.sleep(2)
         await m.delete()
         m=await message.reply_sticker("CAACAgQAAxkBAAECFCdlYsnjhfmscHSoqXEF6L1zOLZnHwACWR8AAiPTIFBhHQABqom6_DkeBA") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
-            photo=random.choice(PICS),
+            photo=random.choice(PICS),{wish}, 
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML

@@ -9,6 +9,7 @@ bs4
 git+https://github.com/Joelkb/cinemagoer
 shortzy
 datetime
+psutil
 pytz
 Flask==2.2.2
 gunicorn==20.1.0

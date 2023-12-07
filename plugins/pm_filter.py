@@ -39,6 +39,9 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
+total, used, free = shutil.disk_usage(".")
+BOT_START_TIME = time.time()
+
 BUTTON = {}
 BUTTONS = {}
 FRESH = {}

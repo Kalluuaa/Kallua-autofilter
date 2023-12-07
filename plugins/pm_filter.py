@@ -1727,7 +1727,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	)
          
     elif query.data == "rendering_info":
-        await query.answer(text=script.STATS.format(get_time(time.time() - BOT_START_TIME), psutil.cpu_percent(), psutil.virtual_memory().percent, humanbytes(total), humanbytes(used), psutil.disk_usage('/').percent, humanbytes(free)), show_alert=True)
+        await query.answer(text=script.STATS.format(get_time(time.time() - BOT_START_TIME), psutil.cpu_percent(), psutil.virtual_memory().percent, psutil.disk_usage('/').percent), show_alert=True)
 	    
     elif query.data == "mods":
         buttons = [[

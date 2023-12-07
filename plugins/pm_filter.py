@@ -4,6 +4,7 @@ import ast
 import math
 import random
 import pytz
+import shutil, psutil, time
 from datetime import datetime, timedelta, date, time
 lock = asyncio.Lock()
 
@@ -1375,10 +1376,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
+                    InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
+                    InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about')
+                ],[
                     InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ Wɪᴛʜ Bᴏᴛ 💸', callback_data="shortlink_info")
-                   ],[
-                    InlineKeyboardButton('⚠️ Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('Aʙᴏᴜᴛ 🔰', callback_data='about')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1456,15 +1457,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
+            InlineKeyboardButton('✨ Exᴛʀᴀ Fᴇᴀᴛᴜʀᴇs ✨', callback_data='mods')
+        ],[
             InlineKeyboardButton('∙ ꜰɪʟᴛᴇʀs ∙', callback_data='filters'),
             InlineKeyboardButton('∙ ꜰɪʟᴇ sᴛᴏʀᴇ ∙', callback_data='store_file')
-        ], [
+        ],[
             InlineKeyboardButton('∙ ᴄᴏɴɴᴇᴄᴛɪᴏɴ ∙', callback_data='coct'),
             InlineKeyboardButton('∙ ᴇxᴛʀᴀ ᴍᴏᴅs ∙', callback_data='extra')
-        ], [
+        ],[
             InlineKeyboardButton('∙ ʀᴜʟᴇs ∙', callback_data='rule_btn'),
             InlineKeyboardButton('∙ sᴇᴛᴛɪɴɢs ∙', callback_data='setting_btn')
-        ], [
+        ],[
             InlineKeyboardButton('⇌ ʙᴀᴄᴋ ⇌', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1492,8 +1495,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('✨ Exᴛʀᴀ Fᴇᴀᴛᴜʀᴇs ✨', callback_data='mods')
-        ],[
+            InlineKeyboardButton("↻ ʀᴇɴᴅᴇʀɪɴɢ ɪɴғᴏ ↺", callback_data='rendering_info')
+         ],[
             InlineKeyboardButton('♙ Hᴏᴍᴇ', callback_data='start'),          
             InlineKeyboardButton('Dɪsᴄʟᴀɪᴍᴇʀ ❗️', callback_data='dicl_btn')
         ]]
@@ -1547,6 +1550,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+     #---------------------------Bot rendring stats-----------------------#
+    elif data == "rendering_info":
+        await query.answer(text=script.STATS.format(get_time(time.time() - BOT_START_TIME), psutil.cpu_percent(), psutil.virtual_memory().percent, humanbytes(total), humanbytes(used), psutil.disk_usage('/').percent, humanbytes(free)), show_alert=True)
+	    #-----------------------------bot stats-------------------------------#
+
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters'),

@@ -1549,13 +1549,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.SOURCE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-
-     #---------------------------Bot rendring stats-----------------------#
-    elif data == "rendering_info":
-        await query.answer(text=script.STATS.format(get_time(time.time() - BOT_START_TIME), psutil.cpu_percent(), psutil.virtual_memory().percent, humanbytes(total), humanbytes(used), psutil.disk_usage('/').percent, humanbytes(free)), show_alert=True)
-	    #-----------------------------bot stats-------------------------------#
-
+	)
+	    
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters'),
@@ -1648,7 +1643,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.FILE_STORE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
+	)
+         
+    elif data == "rendering_info":
+        await query.answer(text=script.STATS.format(get_time(time.time() - BOT_START_TIME), psutil.cpu_percent(), psutil.virtual_memory().percent, humanbytes(total), humanbytes(used), psutil.disk_usage('/').percent, humanbytes(free)), show_alert=True)
+	    
     elif query.data == "mods":
         buttons = [[
             InlineKeyboardButton('🖼️ Tᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'), 

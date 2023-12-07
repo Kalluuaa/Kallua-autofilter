@@ -11,8 +11,6 @@ lock = asyncio.Lock()
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
-import humanize
-from helper.progress import get_size, get_time, humanbytes
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, SUPPORT_CHAT_ID, CUSTOM_FILE_CAPTION, MSG_ALRT, PICS, AUTH_GROUPS, P_TTI_SHOW_OFF, GRP_LNK, CHNL_LNK, SPRT_CHNL, NOR_IMG, LOG_CHANNEL, SPELL_IMG, MAX_B_TN, IMDB, \
@@ -1648,7 +1646,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	)
          
     elif query.data == "rendering_info":
-        await query.answer(text=script.STATS.format(get_time(time.time() - BOT_START_TIME), psutil.cpu_percent(), psutil.virtual_memory().percent, humanbytes(total), humanbytes(used), psutil.disk_usage('/').percent, humanbytes(free)), show_alert=True)
+        await query.answer(text=script.STATS.format((time.time() - BOT_START_TIME), psutil.cpu_percent(), psutil.virtual_memory().percent, humanbytes(total), humanbytes(used), psutil.disk_usage('/').percent, humanbytes(free)), show_alert=True)
 	    
     elif query.data == "mods":
         buttons = [[

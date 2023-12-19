@@ -1736,8 +1736,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Sᴛᴀᴛs 📊', callback_data='stats')
         ],[
             InlineKeyboardButton('🌐 ᴄᴏᴜɴᴛʀʏ', callback_data='country'),     
-            InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('Sᴏɴɢ 🎵', callback_data='song')
+	],[
+	    InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='help')
         ]]       
+	    
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.MODS_TXT,
@@ -1753,7 +1756,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.TELE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-       )
+	)
+    elif query.data == "song":
+        buttons = [[
+            InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='mods')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SONG_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+	)
     elif query.data == "country":
         buttons = [[
             InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='mods')

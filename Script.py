@@ -267,6 +267,11 @@ To Get Sticker ID
  
 ◉ Reply To Any Sticker [/stickerid]"""
 
+  SONG_TXT = """<b>𝑌𝑜𝑢 𝐶𝑎𝑛 𝑈𝑠𝑒 𝑇ℎ𝑖𝑠 𝑀𝑜𝑑𝑢𝑙𝑒 𝑇𝑜 𝐺𝑒𝑡 𝐴𝑛𝑦 𝑆𝑜𝑛𝑔.</b>
+
+<b>◉ 𝑇𝑜 𝑈𝑠𝑒 :- /song Your song name</b>
+      <b>𝐸𝑔 :- /song Dolby walya</b>"""
+
 
     FONT_TXT= """⚙️ 𝐔𝐒𝐀𝐆𝐄
 

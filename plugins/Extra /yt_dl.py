@@ -27,8 +27,7 @@ async def song(client, message):
         thumbnail = results[0]["thumbnails"][0]
         thumb_name = f'thumb{title}.jpg'
         thumb = requests.get(thumbnail, allow_redirects=True)
-        open(thumb_name, 'wb').write(thumb.content)
-        performer = f"[RIO NETWORKS™]" 
+        open(thumb_name, 'wb').write(thumb.content)        
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
@@ -53,8 +52,7 @@ async def song(client, message):
             caption=cap,            
             quote=False,
             title=title,
-            duration=dur,
-            performer=performer,
+            duration=dur,            
             thumb=thumb_name
         )            
         await m.delete()

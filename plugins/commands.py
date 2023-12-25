@@ -58,15 +58,15 @@ async def start(client, message):
                     InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ Wɪᴛʜ Bᴏᴛ 💸', callback_data="shortlink_info")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgQAAxkBAAECFCZlYsnbTA-ItM_wSa8I_R2Me9FA4QACFxIAArzT-FOmYU0gLeJu7x4E") 
+        k=await message.reply_sticker("CAACAgQAAxkBAAECFCZlYsnbTA-ItM_wSa8I_R2Me9FA4QACFxIAArzT-FOmYU0gLeJu7x4E") 
         await asyncio.sleep(1)
-        await m.delete()
-        m=await message.reply_text("𝑺𝒕𝒂𝒓𝒕𝒊𝒏𝒈...") 
+        await k.delete()
+        l=await message.reply_text("𝑺𝒕𝒂𝒓𝒕𝒊𝒏𝒈...") 
         await asyncio.sleep(0.7)
-        await m.delete()        
-        m=await message.reply_sticker("CAACAgQAAxkBAAECFCdlYsnjhfmscHSoqXEF6L1zOLZnHwACWR8AAiPTIFBhHQABqom6_DkeBA") 
+        await l.delete()        
+        k=await message.reply_sticker("CAACAgQAAxkBAAECFCdlYsnjhfmscHSoqXEF6L1zOLZnHwACWR8AAiPTIFBhHQABqom6_DkeBA") 
         await asyncio.sleep(0.7)
-        await m.delete()
+        await k.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(wish, message.from_user.mention, temp.B_NAME),
